@@ -1,11 +1,36 @@
 import "../Styles/Nav.css";
+import React, { useState } from "react";
+import Footer from "./Footer";
 
-function Nav() {
+function Nav({ isOpen, menu }) {
+  if (!isOpen) return null;
+  const items = [
+    "DINNERS",
+    "MEALS",
+    "INGREDIENTS",
+    "OCCASIONS",
+    "CUISINES",
+    "KITCHEN TIPS",
+    "NEWS",
+    "FEATURES",
+    "ABOUT US",
+    "Sweepstakes",
+  ];
+  const [query, setQuery] = useState("");
+
+  const filteredItems = items.filter((item) =>
+    item.toLowerCase().includes(query.toLowerCase())
+  );
   return (
-    <div className="container">
+    <div className="container-nav">
       <label htmlFor="search">Search</label>
       <br />
-      <input type="search" placeholder="What are you looking for?" />
+      <input
+        type="search"
+        placeholder="What are you looking for?"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
       <ul className="fulllist">
         <li>
           <button>
@@ -53,7 +78,7 @@ function Nav() {
           </button>
         </li>
       </ul>
-      <p>GET THE MAGAZINE</p>
+      <p className="newsline">NEWS LINE </p>
       <div>
         <ul className="sublist">
           <li>
@@ -81,6 +106,7 @@ function Nav() {
           </li>
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }

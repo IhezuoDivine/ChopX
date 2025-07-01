@@ -1,9 +1,17 @@
-.container {
+.container-nav {
   background-color: var(--bg-color);
   padding: 30px 10px;
   font-weight: bolder;
-  margin-top: -20px;
   max-width: 600px;
+  position: absolute;
+  top: 60px;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+  z-index: 99;
+  overflow-y: auto;
+  height: 100vh;
+  cursor: pointer;
 }
 input {
   padding: 10px;
@@ -28,7 +36,7 @@ input {
 .fulllist button:hover {
   color: var(--main-color);
 }
-p {
+.newsline {
   font-size: 13px;
   padding: 10px 2px;
   color: var(--main-color);
@@ -36,7 +44,7 @@ p {
   border-bottom: 2px solid black;
 }
 .sublist {
-  padding: 10px 0px;
+  padding: 10px 0px 50px 0px;
   color: rgb(32, 32, 32);
 }
 .sublist li {
@@ -54,4 +62,7 @@ p {
 }
 .sublist button:hover {
   color: rgb(177, 163, 163);
+}
+::placeholder{
+    color: blue;
 }

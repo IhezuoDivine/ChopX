@@ -6,6 +6,7 @@
   text-decoration: none;
   outline: none;
   border: none;
+  position: relative;
 }
 :root {
   --bg-color: rgb(253, 246, 240);
