@@ -1,0 +1,57 @@
+.container {
+  background-color: var(--bg-color);
+  padding: 30px 10px;
+  font-weight: bolder;
+  margin-top: -20px;
+  max-width: 600px;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid black;
+  background-color: var(--bg-color);
+}
+.fulllist {
+  margin-top: 20px;
+}
+.fulllist li {
+  border-bottom: 1px solid rgb(204, 200, 200);
+  padding: 10px 2px;
+}
+.fulllist button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.fulllist button:hover {
+  color: var(--main-color);
+}
+p {
+  font-size: 13px;
+  padding: 10px 2px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.sublist {
+  padding: 10px 0px;
+  color: rgb(32, 32, 32);
+}
+.sublist li {
+  padding: 10px 2px;
+}
+.sublist button i {
+  color: white;
+  background-color: var(--main-color);
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.sublist button {
+  background-color: var(--bg-color);
+}
+.sublist button:hover {
+  color: rgb(177, 163, 163);
+}
