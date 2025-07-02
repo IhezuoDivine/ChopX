@@ -1,0 +1,32 @@
+.homediv {
+  padding: 0px 15px;
+  margin-bottom: 20px;
+}
+.homediv h1 {
+  color: black;
+  font-family: sans-serif;
+}
+.homediv p {
+  color: rgb(27, 26, 26);
+}
+.homeimg {
+  width: 100%;
+  height: 300px;
+}
+.rating {
+  background-color: rgb(41, 99, 34);
+  color: rgb(206, 199, 199);
+}
+.rating h4 {
+  color: black;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+.ratingdiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  text-align: center;
+}
