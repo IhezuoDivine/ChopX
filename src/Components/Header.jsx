@@ -1,6 +1,7 @@
 import "../Styles/Header.css";
 import Nav from "../Components/Nav.jsx";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header({ showAuthLinks = true }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +20,12 @@ function Header({ showAuthLinks = true }) {
       </div>
       {showAuthLinks && (
         <div className="authlinks">
-          <button>LogIn</button>
-          <button>SignUp</button>
+          <Link to="/login">
+            <button>LogIn</button>
+          </Link>
+          <Link to="/signup">
+            <button>SignUp</button>
+          </Link>
         </div>
       )}
       <Nav isOpen={isOpen} toggleMenu={menu} />
