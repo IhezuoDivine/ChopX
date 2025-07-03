@@ -30,3 +30,99 @@
   padding: 10px 30px;
   text-align: center;
 }
+.thelatest {
+  padding: 10px;
+}
+.thelatestcontainer h2 {
+  font-family: sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 35px;
+  border-bottom: 1px solid black;
+}
+.thelatestcontainer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  justify-content: space-between;
+  gap: 20px;
+  overflow: auto;
+}
+.thelatestcontainer ul li {
+  margin: 10px 20px;
+}
+.thelatestcontainer img {
+  height: 100px;
+  width: 300px;
+}
+.thelatestcontainer li {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.chefcomment {
+  padding: 10px;
+  text-align: center;
+  overflow: auto;
+}
+.chefcontainer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  justify-content: center;
+  gap: 20px;
+}
+.chefcontainer li {
+  background-color: rgb(238, 230, 230);
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chefcontainer img {
+  width: 350px;
+  height: 400px;
+}
+.nigeriafood {
+  padding: 10px;
+}
+.nigeriafood h3 {
+  font-size: 30px;
+  color: rgb(48, 47, 47);
+}
+.nigeriafooddiv {
+  width: 100%;
+  overflow-x: auto;
+}
+.nigeriafooddiv ul {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.nigeriafooddiv li {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 10px;
+  white-space: normal;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+.nigeriafooddiv img {
+  width: 270px;
+  height: 150px;
+}
+.faqs {
+  background-color: rgb(131, 130, 130);
+  padding: 20px 0px;
+}
+summary::-webkit-detials-marker {
+  display: none;
+}
+.faqsdiv h4 {
+  font-family: sans-serif;
+  padding: 20px 5px;
+}
+.faqsdiv p {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(41, 35, 35);
+}
